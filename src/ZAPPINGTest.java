@@ -57,6 +57,18 @@ class ZAPPINGTest {
         assertEquals(expectedPresses, actualPresses, "No se necesitan pulsaciones para el mismo canal");
     }
 
+    @Test
+    public void test6(){
+        int currentChannel = 63;
+        int targetChannel = 5;
+        int expectedPresses = 41;
+        int actualPresses = ZAPPING.optimalChannelChange(currentChannel, targetChannel);
+
+        assertEquals(expectedPresses, actualPresses, "No se necesitan pulsaciones para el mismo canal");
+    }
+
+
+
 
 
 
